@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PR Summarizer Presentation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>adorsys</h1>
+    </header>
+
+    <div class="container">
+        <div class="slide active">
+            <h2>1. Introduction</h2>
+            <ul>
+                <li><strong>Title:</strong> PR Summarizer with GitHub Actions</li>
+                <li><strong>Purpose:</strong></li>
+                <ul>
+                    <li>Automates PR reviews by generating a concise summary.</li>
+                    <li>Provides a structured overview of file changes.</li>
+                    <li>Adds a fun, programming-related joke to PRs.</li>
+                </ul>
+                <li><strong>Use Case:</strong></li>
+                <ul>
+                    <li>Saves time for reviewers by reducing manual analysis.</li>
+                    <li>Ideal for large teams working on multiple PRs daily.</li>
+                </ul>
+            </ul>
+        </div>
+
+        <div class="slide">
+            <h2>2. Architecture Overview</h2>
+            <ul>
+                <li><strong>Core Components:</strong></li>
+                <ul>
+                    <li><strong>GitHub Integration:</strong> Handles API interactions.</li>
+                    <li><strong>Summarization:</strong> Extracts key points from PRs.</li>
+                    <li><strong>Joke Fetcher:</strong> Fetches a random programming joke.</li>
+                    <li><strong>Utility Functions:</strong> Reads GitHub event payloads.</li>
+                    <li><strong>Main Entry Point:</strong> Runs the summarization flow.</li>
+                </ul>
+            </ul>
+        </div>
+
+        <div class="slide">
+            <h2>3. Workflow Diagram</h2>
+            <p>Visual representation of the PR Summarizer process:</p>
+            <img src="images/flow.png" alt="Workflow Diagram">
+        </div>
+
+        <div class="slide">
+            <h2>4. Live Demo</h2>
+            <ul>
+                <li>✅ Open a GitHub PR on a test repository.</li>
+                <li>✅ Run the PR Summarizer (manual trigger if needed).</li>
+                <li>✅ View the generated summary + joke in PR comments.</li>
+                <li>✅ Explain how the bot analyzes file changes & PR descriptions.</li>
+            </ul>
+        </div>
+
+        <div class="slide">
+            <h2>5. Conclusion & Q&A</h2>
+            <ul>
+                <li><strong>Benefits:</strong></li>
+                <ul>
+                    <li>Automates PR reviews.</li>
+                    <li>Enhances team productivity.</li>
+                    <li>Makes code reviews engaging.</li>
+                </ul>
+                <li><strong>Future Enhancements:</strong></li>
+                <ul>
+                    <li>Use AI for better summary quality.</li>
+                    <li>Customize jokes or add motivational messages.</li>
+                    <li>Extend support for multiple repositories.</li>
+                </ul>
+            </ul>
+        </div>
+    </div>
+
+    <div class="navigation">
+        <button id="prev" onclick="prevSlide()">Previous</button>
+        <button id="next" onclick="nextSlide()">Next</button>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
